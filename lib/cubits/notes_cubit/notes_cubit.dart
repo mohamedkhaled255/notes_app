@@ -15,7 +15,7 @@ fetchAllNotes() async{
 
     var notesBox= Hive.box<NoteModel>(kNoteBox);
     notes =  notesBox.values.toList();
-
+    emit(NotesSuccess());
 
 }
 }
